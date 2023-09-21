@@ -1,0 +1,68 @@
+/* Index Main */
+
+main {
+	display: flex;
+	border: 1px solid black;
+
+	background-color: aqua;
+	padding: 5px 30px;
+}
+
+/* Image Side */
+
+.me-visual {
+	border: 1px solid blue;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 40vw;
+}
+
+.me-visual h1,
+.me-visual .me-img {
+	margin-left: 150px;
+}
+
+.me-visual > h1 {
+	border: 1px solid blue;
+
+	font-weight: 800;
+	font-size: 50px;
+}
+
+.me-img {
+	border: 1px solid blue;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 100px;
+	height: 550px;
+}
+
+/* Text Side */
+
+.text-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 60vw;
+}
+
+p > span {
+	border: 1px solid blue;
+
+	font-weight: 700;
+	font-size: 40px;
+}
+
+p {
+	border: 1px solid blue;
+
+	font-weight: 400;
+	font-size: 30px;
+	margin-top: 10px;
+}
