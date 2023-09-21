@@ -14,9 +14,10 @@ To do:
 -Form
 
 -Add styling:
-**First Stage**
--Background
--Fix any weird alignment inconsistancies
+
+    **First Stage**
+    -Background
+    -Fix any weird alignment inconsistancies
 
     **Second Stage**
     -Add picture on index (edit on Canva)
@@ -24,5 +25,8 @@ To do:
     -Screens of DevHaus Camp apps
     -Logos of social media
 
--Different Project pages
+-Different Individual Project pages
 -sort layout
+
+-Make Responsive (Do after finishing Odin Project module)
+-for Skills and Portfolio, use grid technique: grid-template-columns: repeat(autofit, minmax(x, 1fr))
