@@ -16,7 +16,8 @@ To do:
 -Add styling:
 
     **First Stage**
-    -Background
+    -Background (consider gray version of this: https://www.manuelringuelet.com/projects) (https://github.com/manuelpastorringuelet/personal-portfolio/blob/main/tailwind.config.ts)
+    -Add hover pseudo classes for nav options like (https://taryn-knerr.vercel.app/music)
     -Fix any weird alignment inconsistancies
 
     **Second Stage**
