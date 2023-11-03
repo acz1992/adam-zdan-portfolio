@@ -1,4 +1,6 @@
 .overall-skills-grid {
+	display: flex;
+	flex-direction: column;
 }
 
 .skills-section {
@@ -7,4 +9,15 @@
 .skills-container {
 	display: flex;
 	flex: 1;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.skills {
+	height: 100px;
+	aspect-ratio: 1/1;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

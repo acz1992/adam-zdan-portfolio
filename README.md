@@ -1,11 +1,13 @@
 # first-iteration_portfolio
 
-First iteration of personal portfolio website, using just HTML and CSS
+First iteration of personal portfolio website, using just HITML5, CSS3 and vanilla JavaScript. Proficiency in libraries and frameworks seems less valuable than demonstrating a fundamental understanding of the underpinning technologies.
 
 To do:
 
 -Wire out:
 -Skills Page
+-Re do wireframing, try approach in new notebook, copied from DevHaus site, or try grid
+
 -Grid for Area
 -Flex for individual software
 -Portfolio Page
