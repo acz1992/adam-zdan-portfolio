@@ -1,0 +1,79 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+	padding: 4rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+section {
+	width: 80vw;
+}
+
+/* Carousel CSS Starts */
+.hdcarousel_wrapper {
+	display: grid;
+	grid-template-rows: 1fr max-content;
+	grid-gap: 0.4em;
+	position: relative;
+	line-height: 1;
+}
+
+.hdcarousel {
+	position: relative;
+	overflow-x: clip;
+}
+
+.hdcarousel_item {
+	position: absolute;
+	height: 300px;
+	aspect-ratio: 1/2;
+	/* padding: 2rem; */
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.1);
+	top: 0;
+	transition: all ease-in-out 800ms;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+}
+
+.hdcarousel_item_active {
+	background-color: #fff;
+	top: -1rem;
+}
+
+.hdcarousel_nav {
+	width: max-content;
+	margin: 0 auto;
+}
+
+.hdcarousel_nav_item {
+	display: inline-block;
+	padding: 0.4em;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+	margin: 0 0.2em;
+	border-radius: 8px;
+	transition: all ease-in-out 300ms;
+}
+
+.hdcarousel_nav_item:hover {
+	background-color: #fff;
+}
