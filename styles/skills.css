@@ -1,0 +1,57 @@
+/* .overall-skills-grid {
+	display: flex;
+	flex-direction: column;
+}
+
+.skills-section {
+}
+
+.skills-container {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.skills {
+	height: 100px;
+	aspect-ratio: 1/1;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+.overall-skills-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 2rem;
+}
+
+.skill-area {
+}
+
+.skill-area > h3 {
+	font-weight: 700;
+	font-size: x-large;
+	margin-bottom: 0.75rem;
+}
+
+.skill-row {
+	display: flex;
+	gap: 2.5rem;
+}
+
+.skill {
+	height: 75px;
+	aspect-ratio: 1/1;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5rem;
+}
+
+.svg-container {
+}

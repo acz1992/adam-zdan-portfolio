@@ -31,5 +31,8 @@ To do:
 -Different Individual Project pages
 -sort layout
 
+Second Iteration:
+-recreate site as one continuous page that jumps to each section (like Figma)
+
 -Make Responsive (Do after finishing Odin Project module)
 -for Skills and Portfolio, use grid technique: grid-template-columns: repeat(autofit, minmax(x, 1fr))
