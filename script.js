@@ -7,7 +7,7 @@ class HDCarousel {
 	width = 0;
 
 	constructor(el, settings = {}) {
-		if (settings !== {}) {
+		if (Object.keys(settings).length > 0) {
 			if (settings.gap) {
 				this.gap = parseInt(settings.gap);
 			}
