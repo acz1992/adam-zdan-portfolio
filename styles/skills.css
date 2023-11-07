@@ -28,11 +28,11 @@ main {
 .skill {
 	height: 75px;
 	aspect-ratio: 1/1;
-	border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 0.5rem;
+	border-radius: 12px;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
 }
 
 .svg-container {
@@ -44,4 +44,11 @@ main {
 .skill-svg {
 	height: 50px;
 	aspect-ratio: 1/1;
+}
+
+.skill:hover {
+	outline: solid 2px #60a5fa;
+	box-shadow: 1px 1px 10px #60a5fa;
+	transform: scale(1.1);
+	transition-delay: 8ms;
 }

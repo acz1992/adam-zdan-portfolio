@@ -4,6 +4,8 @@ First iteration of personal portfolio website, using just HITML5, CSS3 and vanil
 
 To do:
 -Portfolio Page (create card carousel)
+First - Design the card for each project
+Second - Find relevant carousel and apply it.
 
 -Contact Me Page
 -Form
