@@ -3,16 +3,22 @@
 First iteration of personal portfolio website, using just HITML5, CSS3 and vanilla JavaScript. Proficiency in libraries and frameworks seems less valuable than demonstrating a fundamental understanding of the underpinning technologies.
 
 To do:
+Contact Me Page
+-1 Collect Social Media icons
+-2 Apply correct layout (flex)
+-3 Link to my profiles
+
 Portfolio Page
--Figure out Header UL (margin-left: auto) bug that makes li element jump about
--Harmonise portfolio page (border-radius of cards, blue drop shadow focused)
+-Plan Overlay page
 -Take dummy screen shots of a few projects
 -Create overlay for certain projects that need more info
 
-Contact Me Page
--1 Collect Social Media icons
--2 link to my profiles
--3 Apply correct layout (flex)
+-Host on github simple javascript apps
+-Fork Listfull and host on vercel
+
+Landing Page
+-FInd Temporary Pic (CV one)
+-Re-structure layout
 
 -Add styling:
 **First Stage**
@@ -29,9 +35,13 @@ Contact Me Page
 -Different Individual Project pages
 -sort layout
 
+Portfolio:
+-Fork CineScape and finish (with other as source base)
+
 Completed:
 -Wire out - skills page (went with flex solution)
 -Created Portfolio Page Structure
+-FIlled out dummy info for Portfolio page
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)
