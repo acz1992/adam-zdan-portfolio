@@ -1,7 +1,8 @@
-main {
+.skillspage-container {
 	display: flex;
-
 	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 .overall-skills-grid {
@@ -28,11 +29,11 @@ main {
 .skill {
 	height: 75px;
 	aspect-ratio: 1/1;
-	border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 0.5rem;
+	border-radius: 12px;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
 }
 
 .svg-container {
@@ -44,4 +45,70 @@ main {
 .skill-svg {
 	height: 50px;
 	aspect-ratio: 1/1;
+}
+
+.skill:hover {
+	/* 	outline: solid 2px #60a5fa;
+ */
+	box-shadow: 1px 1px 10px #60a5fa;
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+/* img:active {
+	color: #60a5fa;
+	filter: invert(58%) sepia(53%) saturate(1091%) hue-rotate(188deg)
+		brightness(97%) contrast(101%);
+} */
+
+.skill {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(
+		255,
+		255,
+		255,
+		0.8
+	); /* Maybe change to whatever background color ends up being */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	border-radius: 12px;
+}
+
+.overlay div {
+	padding: 5px;
+	font-weight: 600;
+}
+
+.skill:hover .overlay {
+	opacity: 1;
+}
+
+.overlay-text {
+	color: black; /* Customize text color */
+	text-align: center;
+	padding: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+	.overall-skills-grid {
+		flex-wrap: wrap;
+	}
+
+	.skill-row {
+		flex-wrap: wrap;
+	}
 }

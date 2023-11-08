@@ -13,18 +13,25 @@ body {
 	height: 100vh;
 	display: grid;
 	grid-template: 10% 90% / 100%;
+	overflow-y: scroll;
 }
 
 main {
 	padding-left: 100px;
+	padding-right: 100px;
 }
+
 /* Header */
 
 header {
+	max-height: 100px; /* Set a maximum height equal to the viewport height */
+	overflow: -moz-hidden-unscrollable;
+
 	border: 1px solid black;
 	background-color: blueviolet;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: 5px 100px;
 }
 
@@ -39,7 +46,7 @@ ul {
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
-	margin-left: auto;
+	padding-left: auto;
 	gap: 20px;
 }
 
