@@ -50,12 +50,14 @@ div.card {
 
 div.card img {
 	max-width: 300px;
+	border-radius: 12px 12px 0 0;
 }
 
 div.card .card__image-holder {
 	background: rgba(0, 0, 0, 0.1);
 	height: 0;
 	padding-bottom: 75%;
+	border-radius: 12px 12px 0 0;
 }
 
 div.card .card-title {
@@ -63,6 +65,7 @@ div.card .card-title {
 	padding: 6px 15px 10px;
 	position: relative;
 	z-index: 0;
+	border-radius: 0 0 12px 12px;
 }
 
 div.card .card-title a.toggle-info {
@@ -120,6 +123,7 @@ div.card .card-actions {
 	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.075);
 	padding: 10px 15px 20px;
 	text-align: center;
+	border-radius: 0 0 12px 12px;
 }
 
 div.card .card-flap {
@@ -154,6 +158,8 @@ div.cards.showing div.card {
 div.card.show {
 	opacity: 1 !important;
 	transform: scale(1) !important;
+	background: #ffffff;
+	border-radius: 12px 12px 0 0;
 }
 
 div.card.show .card-title a.toggle-info {
@@ -179,8 +185,11 @@ div.card.show .card-flap {
 
 div.card.show .flap1 {
 	transition: all 0.3s 0s ease-out;
+	background: #ffffff;
 }
 
 div.card.show .flap2 {
 	transition: all 0.3s 0.2s ease-out;
+	border-radius: 0 0 12px 12px;
+	background: #ffffff;
 }

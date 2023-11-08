@@ -40,5 +40,7 @@ Second Iteration:
 -for Skills and Portfolio, use grid technique: grid-template-columns: repeat(autofit, minmax(x, 1fr))
 
 Bugs:
+
 -1 Header:
 -On index and portfolio pages where there is overflow on y axis, ul elements in header shift left due to appearence of scroll bar
+-SOLVED: add overflow-y: scroll css property to body, so that scroll bar is on all pages
