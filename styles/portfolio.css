@@ -1,86 +1,186 @@
-html {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+/* body {
+	background: #dce1df;
+} */
 
-*,
-*:before,
-*:after {
-	-webkit-box-sizing: inherit;
-	-moz-box-sizing: inherit;
-	box-sizing: inherit;
-}
-
-* {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-main {
-	padding: 4rem 0;
-	display: flex;
-	justify-content: center;
-}
-
-section {
-	width: 80vw;
-}
-
-/* Carousel CSS Starts */
-.hdcarousel_wrapper {
-	display: grid;
-	grid-template-rows: 1fr max-content;
-	grid-gap: 0.4em;
-	position: relative;
-	line-height: 1;
-}
-
-.hdcarousel {
-	position: relative;
-	overflow-x: clip;
-}
-
-.hdcarousel_item {
-	position: absolute;
-	height: 300px;
-	aspect-ratio: 1/2;
-	/* padding: 2rem; */
-	border-radius: 12px;
-	background: rgba(255, 255, 255, 0.1);
-	top: 0;
-	transition: all ease-in-out 800ms;
-	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
-}
-
-.hdcarousel_item:hover {
-	outline: solid 2px #60a5fa;
-	box-shadow: 1px 1px 10px #60a5fa;
-	transform: scale(1.01);
-	transition-delay: 8ms;
-}
-
-.hdcarousel_item_active {
-	background-color: #fff;
-	top: -1rem;
-}
-
-.hdcarousel_nav {
-	width: max-content;
-	margin: 0 auto;
-}
-
-.hdcarousel_nav_item {
+a.btn {
+	background: #0096a0;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25);
+	color: #ffffff;
 	display: inline-block;
-	padding: 0.4em;
-	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
-	background: rgba(255, 255, 255, 0.1);
-	cursor: pointer;
-	margin: 0 0.2em;
-	border-radius: 8px;
-	transition: all ease-in-out 300ms;
+	padding: 6px 30px 8px;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.1s 0s ease-out;
 }
 
-.hdcarousel_nav_item:hover {
-	background-color: #fff;
+.no-touch a.btn:hover {
+	background: #00a0a8;
+	box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.075);
+	transform: translateY(-2px);
+	transition: all 0.25s 0s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+	background: #007a80;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.25);
+	transform: translate3d(0, 1px, 0);
+	transition: all 0.025s 0s ease-out;
+}
+
+div.cards {
+	margin: 80px auto;
+	max-width: 960px;
+	text-align: center;
+}
+
+div.card {
+	background: #ffffff;
+	display: inline-block;
+	margin: 8px;
+	max-width: 300px;
+	perspective: 1000;
+	position: relative;
+	text-align: left;
+	transition: all 0.3s 0s ease-in;
+	width: 300px;
+	z-index: 1;
+}
+
+div.card img {
+	max-width: 300px;
+}
+
+div.card .card__image-holder {
+	background: rgba(0, 0, 0, 0.1);
+	height: 0;
+	padding-bottom: 75%;
+}
+
+div.card .card-title {
+	background: #ffffff;
+	padding: 6px 15px 10px;
+	position: relative;
+	z-index: 0;
+}
+
+div.card .card-title a.toggle-info {
+	border-radius: 32px;
+	height: 32px;
+	padding: 0;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 32px;
+}
+
+div.card .card-title a.toggle-info span {
+	background: #ffffff;
+	display: block;
+	height: 2px;
+	position: absolute;
+	top: 16px;
+	transition: all 0.15s 0s ease-out;
+	width: 12px;
+}
+
+div.card .card-title a.toggle-info span.left {
+	right: 14px;
+	transform: rotate(45deg);
+}
+
+div.card .card-title a.toggle-info span.right {
+	left: 14px;
+	transform: rotate(-45deg);
+}
+
+div.card .card-title h2 {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin: 0;
+	padding: 0;
+}
+
+div.card .card-title h2 small {
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.025em;
+}
+
+div.card .card-description {
+	padding: 0 15px 10px;
+	position: relative;
+	font-size: 14px;
+}
+
+div.card .card-actions {
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.075);
+	padding: 10px 15px 20px;
+	text-align: center;
+}
+
+div.card .card-flap {
+	background: #f0f0f0;
+	position: absolute;
+	width: 100%;
+	transform-origin: top;
+	transform: rotateX(-90deg);
+}
+
+div.card .flap1 {
+	transition: all 0.3s 0.3s ease-out;
+	z-index: -1;
+}
+
+div.card .flap2 {
+	transition: all 0.3s 0s ease-out;
+	z-index: -2;
+}
+
+div.cards.showing div.card {
+	cursor: pointer;
+	opacity: 0.6;
+	transform: scale(0.88);
+}
+
+.no-touch div.cards.showing div.card:hover {
+	opacity: 0.94;
+	transform: scale(0.92);
+}
+
+div.card.show {
+	opacity: 1 !important;
+	transform: scale(1) !important;
+}
+
+div.card.show .card-title a.toggle-info {
+	background: #ff6666 !important;
+}
+
+div.card.show .card-title a.toggle-info span {
+	top: 15px;
+}
+
+div.card.show .card-title a.toggle-info span.left {
+	right: 10px;
+}
+
+div.card.show .card-title a.toggle-info span.right {
+	left: 10px;
+}
+
+div.card.show .card-flap {
+	background: #ffffff;
+	transform: rotateX(0deg);
+}
+
+div.card.show .flap1 {
+	transition: all 0.3s 0s ease-out;
+}
+
+div.card.show .flap2 {
+	transition: all 0.3s 0.2s ease-out;
 }

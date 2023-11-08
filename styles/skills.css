@@ -1,7 +1,8 @@
-main {
+.skillspage-container {
 	display: flex;
-
 	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 .overall-skills-grid {
@@ -98,4 +99,16 @@ main {
 	color: black; /* Customize text color */
 	text-align: center;
 	padding: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+	.overall-skills-grid {
+		flex-wrap: wrap;
+	}
+
+	.skill-row {
+		flex-wrap: wrap;
+	}
 }
