@@ -2,6 +2,10 @@
 	background: #dce1df;
 } */
 
+main {
+	background-color: black;
+}
+
 a.btn {
 	background: #0096a0;
 	border-radius: 4px;
@@ -46,6 +50,7 @@ div.card {
 	transition: all 0.3s 0s ease-in;
 	width: 300px;
 	z-index: 1;
+	border-radius: 12px 12px 12px 12px;
 }
 
 div.card img {
