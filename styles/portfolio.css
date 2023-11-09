@@ -45,10 +45,6 @@ div.card {
 	border-radius: 12px 12px 12px 12px;
 }
 
-.card:hover {
-	box-shadow: 1px 1px 10px #60a5fa;
-}
-
 div.card img {
 	max-width: 300px;
 	border-radius: 12px 12px 0 0;

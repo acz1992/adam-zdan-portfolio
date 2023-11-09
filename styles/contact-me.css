@@ -1,0 +1,39 @@
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	height: 100%;
+	/* padding-top: 40px; */
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.social-media-container {
+	display: flex;
+	gap: 2rem;
+}
+
+.contact-container p {
+	font-size: 30px;
+}
+
+div.social-media-container img {
+	height: 200px;
+	aspect-ratio: 1/1;
+}
+
+.social-media-container {
+	padding-top: 20px;
+}
+
+img:hover {
+	/* 	box-shadow: 1px 1px 10px #60a5fa; */
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+img:active {
+	filter: invert(66%) sepia(36%) saturate(4681%) hue-rotate(190deg)
+		brightness(103%) contrast(96%);
+}
