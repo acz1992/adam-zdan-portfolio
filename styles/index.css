@@ -1,12 +1,32 @@
 .landing-container {
 	display: flex;
+	align-items: center;
+	border: 1px solid black;
+	/* margin-top: 20px; */
+}
+
+div.pic-side-container > h1 {
+}
+
+div.pic-side-container img {
+	height: 450px;
+	aspect-ratio: 1/1;
+	border-radius: 400px;
+	border: 1px solid black;
+}
+
+div.pic-side-container img:hover {
+	box-shadow: 1px 1px 10px #60a5fa;
+}
+
+/* .landing-container {
+	display: flex;
 	border: 1px solid black;
 
 	background-color: aqua;
-	/* padding: 5px 30px; */
 }
 
-/* Image Side */
+Image Side 
 
 .me-visual {
 	border: 1px solid blue;
@@ -19,8 +39,7 @@
 
 .me-visual h1,
 .me-visual .me-img {
-	/* 	margin-left: 150px;
- */
+
 }
 
 .me-visual > h1 {
@@ -40,7 +59,7 @@
 	height: 550px;
 }
 
-/* Text Side */
+Text Side
 
 .text-card {
 	display: flex;
@@ -65,3 +84,4 @@ p {
 	font-size: 30px;
 	margin-top: 10px;
 }
+ */

@@ -24,6 +24,7 @@
 .skill-row {
 	display: flex;
 	gap: 2.5rem;
+	flex-wrap: wrap;
 }
 
 .skill {
