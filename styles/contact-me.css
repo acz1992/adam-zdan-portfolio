@@ -11,6 +11,8 @@
 
 .social-media-container {
 	display: flex;
+	padding-top: 20px;
+
 	gap: 2rem;
 }
 
@@ -23,10 +25,6 @@ div.social-media-container img {
 	aspect-ratio: 1/1;
 }
 
-.social-media-container {
-	padding-top: 20px;
-}
-
 img:hover {
 	/* 	box-shadow: 1px 1px 10px #60a5fa; */
 	cursor: pointer;
@@ -36,4 +34,11 @@ img:hover {
 img:active {
 	filter: invert(66%) sepia(36%) saturate(4681%) hue-rotate(190deg)
 		brightness(103%) contrast(96%);
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(#0d0d0d, #212121);
+	font-family: "Euclid Circular A", "Poppins";
+	color: #d6dfed;
 }

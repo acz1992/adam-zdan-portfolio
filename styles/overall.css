@@ -5,6 +5,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Roboto Flex", sans-serif;
+	border: 1px solid black;
 }
 
 body {
@@ -24,7 +25,6 @@ main {
 
 header {
 	max-height: 100px;
-	border: 1px solid black;
 	background-color: blueviolet;
 	display: flex;
 	align-items: center;
@@ -40,7 +40,6 @@ a {
 }
 
 ul {
-	border: 1px solid black;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
@@ -54,13 +53,11 @@ ul li {
 }
 
 header a {
-	border: 1px solid black;
 	/* min-width: 400px; */
 	font-weight: 700;
 	font-size: 36px;
 }
 header h1 {
-	border: 1px solid black;
 	/* min-width: 200px; */
 
 	font-weight: 700;
