@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	cards.forEach(function (card) {
 		card.addEventListener("click", function (e) {
-			e.preventDefault();
+			/* e.preventDefault(); */
 
 			var isShowing = false;
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				isShowing = true;
 			}
 
-			var cardsContainer = document.querySelector("div.cards");
+			var cardsContainer = document.querySelector("div.card-container");
 
 			if (cardsContainer.classList.contains("showing")) {
 				// A card is already in view

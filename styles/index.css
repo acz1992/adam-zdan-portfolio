@@ -1,13 +1,12 @@
 .landing-container {
 	display: flex;
-
+	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
-
-	margin-top: 20px;
-}
-
-div.pic-side-container > h1 {
+	margin-top: 60px;
+	/* height: 100%; */
+	gap: 60px;
 }
 
 div.pic-side-container img {
@@ -16,35 +15,51 @@ div.pic-side-container img {
 	border-radius: 400px;
 }
 
-div.pic-side-container img:hover {
-	box-shadow: 1px 1px 10px #60a5fa;
-}
-
 div.text-side-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 10px;
-	width: 50%; /* Adjust the width as needed */
-	margin: 0 auto; /* Center the container itself */
+	width: 50%;
+	/* 	margin: 0 auto;
+ */
 }
 
 div.text-side-container p {
-}
-
-div.pic-side-container h1 {
-	font-size: 40px;
-}
-
-div.text-side-container p {
-	font-size: 18px;
+	font-size: 20px;
 	width: 600px;
 }
 
 div.text-side-container h2 {
-	font-size: 28px;
+	font-size: 34px;
 }
 
 .text-side-container {
-	padding: 0 30px 0 30px;
+	padding: 0 30px 0 5px;
+}
+
+div p {
+	margin-top: 20px;
+}
+
+p span {
+	cursor: pointer;
+	display: inline-block; /* or 'block' depending on your layout requirements */
+	transform-origin: center;
+	transition: transform 2s ease-in-out;
+}
+
+p span.scale {
+	transform: scale(1.2);
+
+	font-weight: 600;
+
+	/* color: #60a5fa; */
+	color: white;
+	background-color: #60a5fa;
+	/* opacity: 0.9; */
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 1px 1px 10px #60a5fa;
+	position: absolute;
 }
