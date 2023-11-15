@@ -2,6 +2,8 @@
 
 First iteration of personal portfolio website, using just HITML5, CSS3 and vanilla JavaScript. Proficiency in libraries and frameworks seems less valuable than demonstrating a fundamental understanding of the underpinning technologies.
 
+Therefore I thought it would be more valuable to try and make a complete portfolio site with just the fundamental front-end technologies.
+
 To do:
 
 Portfolio Page
