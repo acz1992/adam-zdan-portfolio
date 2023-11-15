@@ -54,6 +54,7 @@
 	box-shadow: 1px 1px 10px #60a5fa;
 	cursor: pointer;
 	transform: scale(1.2);
+	transition-duration: 0.6s;
 }
 
 /* img:active {
@@ -85,6 +86,7 @@
 	opacity: 0;
 	transition: opacity 0.3s ease;
 	border-radius: 12px;
+	transition-duration: 0.6s;
 }
 
 .overlay div {

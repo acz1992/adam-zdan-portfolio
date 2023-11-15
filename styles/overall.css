@@ -5,7 +5,8 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Roboto Flex", sans-serif;
-	border: 1px solid black;
+	/* border: 1px solid black; */
+	color: white;
 }
 
 body {
@@ -67,4 +68,7 @@ header h1 {
 .active {
 	background-color: orange;
 	opacity: 0.6;
+	transition: ease-in;
+	transition-duration: 1s;
+	border-radius: 5px;
 }
