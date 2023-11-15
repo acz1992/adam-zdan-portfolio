@@ -46,6 +46,8 @@
 .skill-svg {
 	height: 50px;
 	aspect-ratio: 1/1;
+	filter: brightness(0) saturate(100%) invert(99%) sepia(20%) saturate(0%)
+		hue-rotate(355deg) brightness(112%) contrast(100%);
 }
 
 .skill:hover {

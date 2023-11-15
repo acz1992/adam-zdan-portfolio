@@ -14,25 +14,30 @@ body {
 	display: grid;
 	grid-template: 10% 90% / 100%;
 	overflow-y: scroll;
+	background-color: #202833;
 }
 
 main {
 	padding-left: 100px;
 	padding-right: 100px;
-	background-color: orange;
+	/* background-color: orange; */
 }
 
 /* Header */
 
 header {
 	max-height: 100px;
-	background-color: blueviolet;
+	/* background-color: blueviolet; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px 100px;
+	color: white;
 
 	gap: 10rem;
+
+	border-bottom: solid 1px rgb(255, 255, 255, 0.2);
+	background-clip: padding-box;
 }
 
 a {

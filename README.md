@@ -13,8 +13,6 @@ Portfolio Page
 -Fork Listfull and host on vercel
 
 Landing Page
--Find Temporary Pic (CV one)
--Re-structure layout
 
 -Add styling:
 **First Stage**
@@ -42,6 +40,8 @@ Completed:
 -Apply correct layout (flex)
 -Link to my profiles
 -Edit landing page styling (ie position via padding, font size and weight etc)
+-Find Temporary Pic (CV one)
+-Re-structure Landing Page layout
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)

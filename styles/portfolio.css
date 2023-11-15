@@ -131,14 +131,6 @@ div.card .card-flap {
 	transform: rotateX(-90deg);
 }
 
-/* div.card .card-flap {
-	background: #f0f0f0;
-	position: absolute;
-	width: 100%;
-	transform-origin: top;
-	transform: rotateX(-90deg);
-} */
-
 div.card .flap1 {
 	transition: all 0.3s 0.3s ease-out;
 	z-index: -1;
@@ -191,10 +183,17 @@ div.card.show .card-flap {
 div.card.show .flap1 {
 	transition: all 0.3s 0s ease-out;
 	background: #ffffff;
+	color: black;
 }
 
 div.card.show .flap2 {
 	transition: all 0.3s 0.2s ease-out;
 	border-radius: 0 0 12px 12px;
 	background: #ffffff;
+}
+
+div.cards div,
+div.cards h2,
+h2 small {
+	color: black;
 }
