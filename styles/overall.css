@@ -31,7 +31,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 5px 100px;
+	margin: 5px 100px;
 	color: white;
 
 	gap: 10rem;
@@ -51,6 +51,7 @@ ul {
 	justify-content: space-between;
 	padding-left: auto;
 	gap: 20px;
+	padding: 2px;
 }
 
 ul li {
@@ -62,6 +63,7 @@ header a {
 	/* min-width: 400px; */
 	font-weight: 700;
 	font-size: 36px;
+	padding: 5px;
 }
 header h1 {
 	/* min-width: 200px; */
@@ -71,8 +73,9 @@ header h1 {
 }
 
 .active {
-	background-color: orange;
+	background-color: #60a5fa;
 	opacity: 0.6;
+
 	transition: ease-in;
 	transition-duration: 1s;
 	border-radius: 5px;

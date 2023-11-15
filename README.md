@@ -9,39 +9,23 @@ Portfolio Page
 -Take dummy screen shots of a few projects
 -Create overlay for certain projects that need more info
 
--Host on github simple javascript apps
--Fork Listfull and host on vercel
-
-Landing Page
-
--Add styling:
-**First Stage**
--Background (consider gray version of this: https://www.manuelringuelet.com/projects) (https://github.com/manuelpastorringuelet/personal-portfolio/blob/main/tailwind.config.ts)
--Add hover pseudo classes for nav options like (https://taryn-knerr.vercel.app/music)
--Fix any weird alignment inconsistancies
-
-    **Second Stage**
-    -Add picture on index (edit on Canva)
-    -Source logos and add different skills (save imgs for future iterations)
-    -Screens of DevHaus Camp apps
-    -Logos of social media
-
--Different Individual Project pages
--sort layout
-
-Portfolio:
--Fork CineScape and finish (with other as source base)
+-Fork Listfull, attach variables and host on vercel
+-Finish Cinescape and host on vercel
 
 Completed:
 -Wire out - skills page (went with flex solution)
 -Created Portfolio Page Structure
--FIlled out dummy info for Portfolio page
+-Filled out dummy info for Portfolio page
 -Collect Social Media icons
 -Apply correct layout (flex)
 -Link to my profiles
 -Edit landing page styling (ie position via padding, font size and weight etc)
 -Find Temporary Pic (CV one)
 -Re-structure Landing Page layout
+-Fix bug on index and portfolio page with sudden appearance of scroll
+-Add background
+-Add selected effect for nav bar
+-Fix any page-specific alignment issues
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)

@@ -1,5 +1,5 @@
-a.btn {
-	background: #0096a0;
+a.button {
+	background: #60a5fa;
 	border-radius: 4px;
 	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25);
 	color: #ffffff;
@@ -10,23 +10,23 @@ a.btn {
 	transition: all 0.1s 0s ease-out;
 }
 
-.no-touch a.btn:hover {
-	background: #00a0a8;
+a.button:hover {
+	background: #84b1e8;
 	box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.075);
 	transform: translateY(-2px);
 	transition: all 0.25s 0s ease-out;
 }
 
-.no-touch a.btn:active,
-a.btn:active {
-	background: #007a80;
+a.button:active,
+a.button:active {
+	background: #1a68c6;
 	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.25);
-	transform: translate3d(0, 1px, 0);
-	transition: all 0.025s 0s ease-out;
+	/* transform: translate3d(0, 1px, 0);
+	transition: all 0.025s 0s ease-out; */
 }
 
-div.cards {
-	margin: 80px auto;
+div.card-container {
+	margin: 20px auto;
 	max-width: 960px;
 	text-align: center;
 }
@@ -50,7 +50,7 @@ div.card img {
 	border-radius: 12px 12px 0 0;
 }
 
-div.card .card__image-holder {
+div.card .card-image-holder {
 	background: rgba(0, 0, 0, 0.1);
 	height: 0;
 	padding-bottom: 75%;
@@ -141,13 +141,13 @@ div.card .flap2 {
 	z-index: -2;
 }
 
-div.cards.showing div.card {
+div.card-container.showing div.card {
 	cursor: pointer;
 	opacity: 0.6;
 	transform: scale(0.88);
 }
 
-.no-touch div.cards.showing div.card:hover {
+div.card-container.showing div.card:hover {
 	opacity: 0.94;
 	transform: scale(0.92);
 }
@@ -192,8 +192,8 @@ div.card.show .flap2 {
 	background: #ffffff;
 }
 
-div.cards div,
-div.cards h2,
+div.card-container div,
+div.card-container h2,
 h2 small {
 	color: black;
 }
