@@ -3,10 +3,6 @@
 First iteration of personal portfolio website, using just HITML5, CSS3 and vanilla JavaScript. Proficiency in libraries and frameworks seems less valuable than demonstrating a fundamental understanding of the underpinning technologies.
 
 To do:
-Contact Me Page
--1 Collect Social Media icons
--2 Apply correct layout (flex)
--3 Link to my profiles
 
 Portfolio Page
 -Plan Overlay page
@@ -17,7 +13,7 @@ Portfolio Page
 -Fork Listfull and host on vercel
 
 Landing Page
--FInd Temporary Pic (CV one)
+-Find Temporary Pic (CV one)
 -Re-structure layout
 
 -Add styling:
@@ -42,6 +38,10 @@ Completed:
 -Wire out - skills page (went with flex solution)
 -Created Portfolio Page Structure
 -FIlled out dummy info for Portfolio page
+-Collect Social Media icons
+-Apply correct layout (flex)
+-Link to my profiles
+-Edit landing page styling (ie position via padding, font size and weight etc)
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)

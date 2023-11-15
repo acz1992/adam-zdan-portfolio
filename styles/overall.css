@@ -4,9 +4,9 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	/* 	font-size: 16px;
- */
 	font-family: "Roboto Flex", sans-serif;
+	/* border: 1px solid black; */
+	color: white;
 }
 
 body {
@@ -19,20 +19,20 @@ body {
 main {
 	padding-left: 100px;
 	padding-right: 100px;
+	background-color: orange;
 }
 
 /* Header */
 
 header {
-	max-height: 100px; /* Set a maximum height equal to the viewport height */
-	overflow: -moz-hidden-unscrollable;
-
-	border: 1px solid black;
+	max-height: 100px;
 	background-color: blueviolet;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px 100px;
+
+	gap: 10rem;
 }
 
 a {
@@ -41,8 +41,6 @@ a {
 }
 
 ul {
-	border: 1px solid black;
-
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
@@ -56,17 +54,21 @@ ul li {
 }
 
 header a {
-	/* display: block; */
-	border: 1px solid black;
-	min-width: 400px;
-
+	/* min-width: 400px; */
 	font-weight: 700;
 	font-size: 36px;
 }
 header h1 {
-	border: 1px solid black;
-	min-width: 200px;
+	/* min-width: 200px; */
 
 	font-weight: 700;
 	font-size: 36px;
+}
+
+.active {
+	background-color: orange;
+	opacity: 0.6;
+	transition: ease-in;
+	transition-duration: 1s;
+	border-radius: 5px;
 }
