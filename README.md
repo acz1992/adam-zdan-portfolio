@@ -5,6 +5,10 @@ First iteration of personal portfolio website, using just HITML5, CSS3 and vanil
 Therefore I thought it would be more valuable to try and make a complete portfolio site with just the fundamental front-end technologies.
 
 To do:
+-Make responsive
+
+Overall
+-Make Responsive
 
 Portfolio Page
 -Plan Overlay page
@@ -31,8 +35,6 @@ Completed:
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)
-
--Make Responsive (Do after finishing Odin Project module)
 -for Skills and Portfolio, use grid technique: grid-template-columns: repeat(autofit, minmax(x, 1fr))
 
 Bugs:
