@@ -2,26 +2,24 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
-	height: 100%;
 
-	justify-content: center;
-	padding-bottom: 40px;
+	gap: 2rem;
 }
 
 .social-media-container {
 	display: flex;
-	padding-top: 20px;
+	padding-top: 1.25rem;
 
 	gap: 2rem;
 }
 
 .contact-container p {
-	font-size: 30px;
+	font-size: 1.875rem;
+	font-weight: 400;
 }
 
 div.social-media-container img {
-	height: 200px;
+	height: 12.5rem;
 	aspect-ratio: 1/1;
 }
 
@@ -44,13 +42,44 @@ img {
 
 /* Styles for small screens (e.g., smartphones) */
 @media only screen and (max-width: 767px) {
+	div.social-media-container img {
+		height: clamp(3.125rem, 4.688rem, 9.375rem);
+		aspect-ratio: 1/1;
+	}
+
+	.contact-container {
+		margin-top: 4rem;
+	}
+	.contact-container p {
+		font-size: clamp(0.625rem, 1rem, 1.875rem);
+	}
+
+	.social-media-container {
+		gap: clamp(0.5rem, 1rem, 1.5rem);
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 /* Styles for medium screens (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.contact-container {
+		margin-top: 6rem;
+	}
+
+	div.social-media-container img {
+		height: 9.375rem;
+		aspect-ratio: 1/1;
+	}
+
+	.contact-container p {
+		font-size: 1.625rem;
+	}
 }
 
 /* Styles for large screens (e.g., desktops) */
 @media only screen and (min-width: 1024px) {
-	/* Keep your existing styles for large screens */
+	.contact-container {
+		margin-top: 6rem;
+	}
 }
