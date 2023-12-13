@@ -10,6 +10,7 @@ To do next:
 -Make Contact Me Page responsive
 
 -Redesign Landing page - swap pic and text. Make heading smaller and text smaller
+-Make Index page responsives
 
 Other issues:
 -Header animation not always working
