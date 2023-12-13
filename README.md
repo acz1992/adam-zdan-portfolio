@@ -4,11 +4,15 @@ First iteration of personal portfolio website, using just HITML5, CSS3 and vanil
 
 Therefore I thought it would be more valuable to try and make a complete portfolio site with just the fundamental front-end technologies.
 
-To do:
--Make responsive
+To do next:
+-Make Skills Page responsive
+-Make Portfolio Page responsive
+-Make Contact Me Page responsive
 
-Overall
--Make Responsive
+-Redesign Landing page - swap pic and text. Make heading smaller and text smaller
+
+Other issues:
+-Header animation not always working
 
 Portfolio Page
 -Plan Overlay page
@@ -32,6 +36,7 @@ Completed:
 -Add background
 -Add selected effect for nav bar
 -Fix any page-specific alignment issues
+-Make Header responsive
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)
