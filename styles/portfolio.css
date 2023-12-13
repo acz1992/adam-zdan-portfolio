@@ -204,6 +204,10 @@ h2 small {
 
 /* Styles for medium screens (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+	main {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
 }
 
 /* Styles for large screens (e.g., desktops) */
