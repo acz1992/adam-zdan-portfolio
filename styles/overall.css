@@ -5,7 +5,6 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Roboto Flex", sans-serif;
-	/* border: 1px solid black; */
 	color: white;
 }
 
@@ -18,25 +17,20 @@ body {
 }
 
 main {
-	padding-left: 100px;
-	padding-right: 100px;
-	/* background-color: orange; */
+	padding-left: 6.25rem; /* 100px converted to rem */
+	padding-right: 6.25rem; /* 100px converted to rem */
 }
 
 /* Header */
-
 header {
-	max-height: 100px;
-	/* background-color: blueviolet; */
+	max-height: 6.25rem; /* 100px converted to rem */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 5px 100px;
+	margin: 0.3125rem 6.25rem; /* 5px converted to rem, 100px converted to rem */
 	color: white;
-
 	gap: 10rem;
-
-	border-bottom: solid 1px rgb(255, 255, 255, 0.2);
+	border-bottom: solid 0.0625rem rgb(255, 255, 255, 0.2); /* 1px converted to rem */
 	background-clip: padding-box;
 }
 
@@ -50,8 +44,8 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	padding-left: auto;
-	gap: 20px;
-	padding: 2px;
+	gap: 1.25rem; /* 20px converted to rem */
+	padding: 0.125rem; /* 2px converted to rem */
 }
 
 ul li {
@@ -60,23 +54,79 @@ ul li {
 }
 
 header a {
-	/* min-width: 400px; */
 	font-weight: 700;
-	font-size: 36px;
-	padding: 5px;
+	font-size: 2.25rem; /* 36px converted to rem */
+	padding: 0.3125rem; /* 5px converted to rem */
 }
-header h1 {
-	/* min-width: 200px; */
 
+header h1 {
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 2.25rem; /* 36px converted to rem */
 }
 
 .active {
 	background-color: #60a5fa;
 	opacity: 0.6;
-
 	transition: ease-in;
 	transition-duration: 1s;
-	border-radius: 5px;
+	border-radius: 0.3125rem; /* 5px converted to rem */
+}
+
+/* ////////////////// */
+/* Responsive Overall */
+/* ////////////////// */
+
+/* Styles for small screens (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	header {
+		height: fit-content;
+		padding: 0.5rem 0rem;
+		margin: 0rem 1rem; /* Adjust the margin for smaller screens */
+		gap: 1rem; /* Adjust the gap between elements */
+	}
+
+	header h1 {
+		font-size: 1rem; /* Adjust the font size for h1 on smaller screens */
+	}
+
+	header a {
+		font-size: 1rem; /* Adjust the font size for anchor elements */
+	}
+}
+
+/* Styles for medium screens (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	header {
+		height: fit-content;
+		padding: 1rem 0rem;
+		margin: 0 2rem; /* Adjust the margin for medium screens */
+	}
+
+	header h1 {
+		font-size: 1.8rem; /* Adjust the font size for h1 on medium screens */
+	}
+
+	header a {
+		font-size: 1.5rem; /* Adjust the font size for anchor elements on medium screens */
+	}
+}
+
+/* Styles for large screens (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+	/* Keep your existing styles for large screens */
 }

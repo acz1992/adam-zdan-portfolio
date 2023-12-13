@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	cards.forEach(function (card) {
 		card.addEventListener("click", function (e) {
-			/* e.preventDefault(); */
+			var isButton = e.target.classList.contains("button");
+
+			if (!isButton) {
+				e.preventDefault();
+			}
 
 			var isShowing = false;
 
@@ -36,6 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
 				card.classList.add("show");
 
 				zindex++;
+			}
+
+			// Stop the click event from propagating up the DOM tree only if it's not a button
+			if (!isButton) {
+				e.stopPropagation();
 			}
 		});
 	});

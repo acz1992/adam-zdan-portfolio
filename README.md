@@ -4,7 +4,13 @@ First iteration of personal portfolio website, using just HITML5, CSS3 and vanil
 
 Therefore I thought it would be more valuable to try and make a complete portfolio site with just the fundamental front-end technologies.
 
-To do:
+To do next:
+
+-Redesign Landing page - swap pic and text. Make heading smaller and text smaller
+-Make Index page responsives
+
+Other issues:
+-Header animation not always working
 
 Portfolio Page
 -Plan Overlay page
@@ -28,11 +34,14 @@ Completed:
 -Add background
 -Add selected effect for nav bar
 -Fix any page-specific alignment issues
+-Make Header responsive
+-Make Skills Page responsive
+-Make Portfolio Page responsive
+-Fix bug in Portfolio that made buttons unclickable
+-Make Contact Me Page responsive
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)
-
--Make Responsive (Do after finishing Odin Project module)
 -for Skills and Portfolio, use grid technique: grid-template-columns: repeat(autofit, minmax(x, 1fr))
 
 Bugs:
@@ -40,3 +49,7 @@ Bugs:
 -1 Header:
 -On index and portfolio pages where there is overflow on y axis, ul elements in header shift left due to appearence of scroll bar
 -SOLVED: add overflow-y: scroll css property to body, so that scroll bar is on all pages
+
+-2 Portfolio page:
+-when clicking on a card, card expanded but page automatically jumped back to the top. When adding preventDefault(), prevented card button event Listeners.
+-SOLVED: Outside of adding Eventlistener for cards, add condition that if it isnt button, stopPropogation

@@ -63,3 +63,16 @@ p span.scale {
 	box-shadow: 1px 1px 10px #60a5fa;
 	position: absolute;
 }
+
+/* Styles for small screens (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+}
+
+/* Styles for medium screens (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Styles for large screens (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+	/* Keep your existing styles for large screens */
+}

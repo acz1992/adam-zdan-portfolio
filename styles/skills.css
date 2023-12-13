@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
+	padding-top: 1.25rem;
 }
 
 .overall-skills-grid {
@@ -17,7 +17,7 @@
 
 .skill-area > h3 {
 	font-weight: 700;
-	font-size: x-large;
+	font-size: 1.5rem;
 	margin-bottom: 0.75rem;
 }
 
@@ -28,12 +28,12 @@
 }
 
 .skill {
-	height: 75px;
+	height: 4.68rem;
 	aspect-ratio: 1/1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 12px;
+	border-radius: 0.75rem;
 	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .skill-svg {
-	height: 50px;
+	height: 3.125rem;
 	aspect-ratio: 1/1;
 	filter: brightness(0) saturate(100%) invert(99%) sepia(20%) saturate(0%)
 		hue-rotate(355deg) brightness(112%) contrast(100%);
@@ -92,7 +92,7 @@
 }
 
 .overlay div {
-	padding: 5px;
+	padding: 0.313rem;
 	font-weight: 600;
 }
 
@@ -103,17 +103,41 @@
 .overlay-text {
 	color: black; /* Customize text color */
 	text-align: center;
-	padding: 10px;
+	padding: 0.625rem;
 }
 
-/* Responsive */
+/* ////////////////////// */
+/* Responsive Skills Page */
+/* ////////////////////// */
 
-@media (max-width: 768px) {
-	.overall-skills-grid {
-		flex-wrap: wrap;
+/* Styles for small screens (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+	.skill {
+		height: 3.125rem;
+		aspect-ratio: 1/1;
 	}
 
-	.skill-row {
-		flex-wrap: wrap;
+	.skill-svg {
+		height: 2.5rem;
+		aspect-ratio: 1/1;
 	}
+
+	.overlay {
+		font-size: 0.8rem;
+	}
+
+	.skill-area > h3 {
+		font-weight: 700;
+		font-size: 1.4rem;
+		margin-bottom: 0.75rem;
+	}
+}
+
+/* Styles for medium screens (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Styles for large screens (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+	/* Keep your existing styles for large screens */
 }
