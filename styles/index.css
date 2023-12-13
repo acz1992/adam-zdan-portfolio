@@ -18,21 +18,20 @@ div.text-side-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 10px;
-	/* width: 50%; */
-}
 
-div.text-side-container p {
-	font-size: 14x;
-	width: 600px;
+	/* width: 50%; */
 }
 
 div.text-side-container h2 span {
 	font-size: 60px;
 }
 
+div.text-side-container p {
+	font-size: 14px;
+	width: 600px;
+}
+
 div.text-side-container h2 {
-	font-size: 42px;
 	margin-bottom: 5px;
 }
 
@@ -68,13 +67,57 @@ p span.scale {
 
 /* Styles for small screens (e.g., smartphones) */
 @media only screen and (max-width: 767px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.landing-container {
+		margin-top: 20px;
+	}
+	div.pic-side-container img {
+		height: 350px;
+		aspect-ratio: 1/1;
+		border-radius: 400px;
+	}
+
+	div.text-side-container h2 {
+		font-size: clamp(16px, 30px, 50px);
+	}
+
+	div.text-side-container {
+		gap: 2px;
+		/* width: 50%; */
+	}
+
+	div.text-side-container p {
+		font-size: 10px;
+		gap: 0;
+		width: 300px;
+	}
+
+	div.text-side-container h2 {
+		margin-bottom: 5px;
+	}
+	div p {
+		margin-top: 10px;
+	}
 }
 
 /* Styles for medium screens (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+	.landing-container {
+		margin-top: 30px;
+	}
 }
 
 /* Styles for large screens (e.g., desktops) */
 @media only screen and (min-width: 1024px) {
-	/* Keep your existing styles for large screens */
+	.landing-container {
+		margin-top: 30px;
+	}
 }

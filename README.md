@@ -6,8 +6,6 @@ Therefore I thought it would be more valuable to try and make a complete portfol
 
 To do next:
 
--Make Index page responsives
-
 Other issues:
 -Header animation not always working
 
@@ -39,6 +37,7 @@ Completed:
 -Fix bug in Portfolio that made buttons unclickable
 -Make Contact Me Page responsive
 -Redesign Landing page - swap pic and text. Make heading smaller and text smaller
+-Make Index page responsives
 
 Second Iteration:
 -recreate site as one continuous page that jumps to each section (like Figma)
