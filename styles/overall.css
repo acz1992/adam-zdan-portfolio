@@ -72,10 +72,22 @@ header h1 {
 	border-radius: 0.3125rem; /* 5px converted to rem */
 }
 
-/* Responsive Header */
+/* ////////////////// */
+/* Responsive Overall */
+/* ////////////////// */
 
 /* Styles for small screens (e.g., smartphones) */
 @media only screen and (max-width: 767px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
 	header {
 		height: fit-content;
 		padding: 0.5rem 0rem;
@@ -84,11 +96,11 @@ header h1 {
 	}
 
 	header h1 {
-		font-size: 1.5rem; /* Adjust the font size for h1 on smaller screens */
+		font-size: 1rem; /* Adjust the font size for h1 on smaller screens */
 	}
 
 	header a {
-		font-size: 1.2rem; /* Adjust the font size for anchor elements */
+		font-size: 1rem; /* Adjust the font size for anchor elements */
 	}
 }
 
